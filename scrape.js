@@ -129,7 +129,7 @@ casper.then(function () {
   printFilterDetails();
   casper.echo("[SCRAPE DETAILS]\n");
   if (numFeedItems() > 0) {
-    loadFeedItems(null, NUM_ITEMS);
+    //loadFeedItems(null, NUM_ITEMS);
   } else {
     casper.echo("  EMPTY FEED");
   }
