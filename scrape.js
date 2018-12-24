@@ -58,6 +58,11 @@ function processCLIvaribles() {
   readSortFilterFromCLI();
 }
 
+// Click on Clear All button to clear all filters
+casper.then(function () {
+  clickSelectors([grailedSelectors.clear["button"]]);
+});
+
 // Search against query
 casper.then(function () {
   if (filter.config["query"]) {

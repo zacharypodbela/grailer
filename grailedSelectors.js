@@ -1,6 +1,10 @@
 exports.GrailedSelectors = function() {
   var self = this;
-
+  
+  self.clear = {
+    "button": "div.-filter-button-container > .Homepage-Filtering-ClearButton"
+  }
+  
   self.search = {
     "query-input": "div.waypoint-wrapper > div > div > form > label > input",
     "designer-input": ".designer-search-wrapper input",
