@@ -177,7 +177,7 @@ exports.GrailedSelectors = function() {
   self.sizes = {
     tops: {
       panel:
-        ".sizes-wrapper > div.filter-bottom.checkboxes > span:nth-child(1) > div > h3 > span:nth-child(1)",
+        ".sizes-wrapper > div.-collapsible-content > div.filter-bottom.checkboxes > span:nth-child(1) > div > h3 > span:nth-child(1)",
       XXS:
         ".sizes-wrapper .sizes.tops.outerwear > p.active-indicator:nth-of-type(1)",
       XS:
@@ -195,7 +195,7 @@ exports.GrailedSelectors = function() {
     },
     bottoms: {
       panel:
-        ".sizes-wrapper > div.filter-bottom.checkboxes > span:nth-child(2) > div > h3 > span:nth-child(1)",
+        ".sizes-wrapper > div.-collapsible-content > div.filter-bottom.checkboxes > span:nth-child(2) > div > h3 > span:nth-child(1)",
       26: ".sizes-wrapper .sizes.bottoms > p.active-indicator:nth-of-type(1)",
       27: ".sizes-wrapper .sizes.bottoms > p.active-indicator:nth-of-type(2)",
       28: ".sizes-wrapper .sizes.bottoms > p.active-indicator:nth-of-type(3)",
@@ -218,7 +218,7 @@ exports.GrailedSelectors = function() {
     },
     footwear: {
       panel:
-        ".sizes-wrapper > div.filter-bottom.checkboxes > span:nth-child(3) > div > h3 > span:nth-child(1)",
+        ".sizes-wrapper > div.-collapsible-content > div.filter-bottom.checkboxes > span:nth-child(3) > div > h3 > span:nth-child(1)",
       "5": ".sizes-wrapper .sizes.footwear > p.active-indicator:nth-of-type(1)",
       "5.5":
         ".sizes-wrapper .sizes.footwear > p.active-indicator:nth-of-type(2)",
@@ -255,7 +255,7 @@ exports.GrailedSelectors = function() {
     },
     tailoring: {
       panel:
-        ".sizes-wrapper > div.filter-bottom.checkboxes > span:nth-child(4) > div > h3 > span:nth-child(1)",
+        ".sizes-wrapper > div.-collapsible-content > div.filter-bottom.checkboxes > span:nth-child(4) > div > h3 > span:nth-child(1)",
       "34S":
         ".sizes-wrapper .sizes.tailoring > p.active-indicator:nth-of-type(1)",
       "34R":
@@ -319,7 +319,7 @@ exports.GrailedSelectors = function() {
     },
     accessories: {
       panel:
-        ".sizes-wrapper > div.filter-bottom.checkboxes > span:nth-child(5) > div > h3 > span:nth-child(1)",
+        ".sizes-wrapper > div.-collapsible-content > div.filter-bottom.checkboxes > span:nth-child(5) > div > h3 > span:nth-child(1)",
       OS:
         ".sizes-wrapper .sizes.accessories > p.active-indicator:nth-of-type(1)",
       26: ".sizes-wrapper .sizes.accessories > p.active-indicator:nth-of-type(2)",
