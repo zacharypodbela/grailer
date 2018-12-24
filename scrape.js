@@ -29,7 +29,7 @@ function processCLIvaribles() {
   }
   
   filter.add({
-    markets: getListFromCLI("markets", MARKETS).slice(),
+    markets: getListFromCLI("markets", []).slice(),
     locations: getListFromCLI("locations", []).slice(),
     designers: getListFromCLI("designers", []).slice()
   });
