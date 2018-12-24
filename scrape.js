@@ -52,9 +52,6 @@ function processCLIvaribles() {
   }
   if (casper.cli.has("max")) {
     maxPrice = casper.cli.raw.get("max");
-    casper.sendKeys(grailedSelectors.prices["max"], maxPrice, {
-      keepFocus: true
-    });
     filter.add({ price: { max: maxPrice } });
   }
   
