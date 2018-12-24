@@ -144,7 +144,7 @@ casper.then(function () {
   printFilterDetails();
   casper.echo("[SCRAPE DETAILS]\n");
   if (numFeedItems() > 0) {
-    loadFeedItems(null, NUM_ITEMS);
+    //loadFeedItems(null, NUM_ITEMS);
   } else {
     casper.echo("  EMPTY FEED");
   }
@@ -210,7 +210,7 @@ function clickDesignerFilter(designer) {
 
 function numFeedItems() {
   return casper.evaluate(function () {
-    return $("div.feed-item").length;
+    return document.querySelectorAll("div.feed-item:not(.empty-item)").length;
   });
 }
 
@@ -242,7 +242,7 @@ function loadFeedItems(prevFeedItemCount, numItems) {
 
 function setMarketFilter(selector, active) {
   var classes = casper.getElementAttribute(selector, "class");
-  var isMarketActive = classes.split(" ").indexOf("active") == 0;
+  var isMarketActive = classes.split(" ").indexOf("active") != -1;
   if (isMarketActive != active) {
     casper.click(selector);
     casper.wait(1000);
