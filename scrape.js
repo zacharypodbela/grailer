@@ -24,6 +24,11 @@ casper.start("https://grailed.com/", function () {
   LOCATIONS_TO_SCRAPE = getListFromCLI("locations", []).slice();
 });
 
+// Click on Clear All button to clear all filters
+casper.then(function () {
+  clickSelectors([grailedSelectors.clear["button"]]);
+});
+
 function configureFiltersFromObj(config) {
   casper.sendKeys(grailedSelectors.search["query-input"], config.query);
 }
